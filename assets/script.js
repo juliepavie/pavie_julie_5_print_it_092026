@@ -16,3 +16,20 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+// Récupération des flèches html
+const arrowLeft = document.querySelector(".arrow_left");
+const arrowRight = document.querySelector(".arrow_right");
+
+// Affichage des flèches dans la console pour vérifier leur récupération
+console.log(arrowLeft);
+console.log(arrowRight);
+
+//ecouteur d'événement pour la flèche gauche et droite
+arrowLeft.addEventListener("click", function() {
+	console.log("clic sur la flèche gauche");
+});
+
+arrowRight.addEventListener("click", function() {
+	console.log("clic sur la flèche droite");
+});
